@@ -23,7 +23,7 @@ renderer.render(scene, camera);
 //Torus
 
 const geometry = new THREE.TorusKnotGeometry( 5, 1.4, 100, 16 );
-const material = new THREE.MeshStandardMaterial({color: 0x696969, emissive: 0x000000, roughness: 0, metalness: 1});
+const material = new THREE.MeshStandardMaterial({color: 0xFFFFFF, emissive: 0x010101, roughness:0, metalness: 0.25, wireframe: true});
 const torusKnot = new THREE.Mesh( geometry, material );
 scene.add(torusKnot);
 
