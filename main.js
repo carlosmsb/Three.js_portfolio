@@ -22,10 +22,14 @@ renderer.render(scene, camera);
 
 //Torus
 
-const geometry = new THREE.TorusKnotGeometry( 5, 1.4, 100, 16 );
+const geometry = new THREE.TorusKnotGeometry( 7, 1.4, 200, 50 );
 const material = new THREE.MeshStandardMaterial({color: 0xFFFFFF, emissive: 0x010101, roughness:0, metalness: 0.25, wireframe: true});
 const torusKnot = new THREE.Mesh( geometry, material );
 scene.add(torusKnot);
+
+torusKnot.position.z = 10;
+torusKnot.position.y = (3);
+torusKnot.position.x = (-2);
 
 //Lights
 
